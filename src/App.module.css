@@ -99,7 +99,8 @@ ul {
 .searchIcon,
 .dots,
 .subscribersCounter,
-.subscribeText{
+.subscribeText,
+.lowerMenu{
     display: none;
 }
 
