@@ -1,0 +1,667 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.app {
+    max-width: 192rem;
+}
+
+.header {
+    margin: 2rem 7rem 3rem 3.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft {
+    display: flex;
+    gap: 2.8rem;
+    margin-right: 8rem;
+    align-items: center
+}
+
+.hamburger {
+    width: 2rem;
+    height: 1.7rem;
+}
+
+.logoName {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.logo {
+    width: 3.66rem;
+    height: 2.5rem;
+}
+
+.youtubeName {
+    width: 7.46rem;
+    height: 2.27rem;
+}
+
+.searchBar {
+    width: 100%;
+    background: #EBEBEB;
+    border-radius: 2.2rem;
+    height: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-right: 2rem;
+    max-width: 83rem
+}
+
+.searchBar p {
+    font-family: Mulish,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #C2C2C2;
+}
+
+.headerRight {
+    display: flex;
+    gap: 5rem;
+}
+
+.searchIcon,
+.dots,
+.subscribersCounter,
+.subscribeText{
+    display: none;
+}
+
+.main {
+    display: flex;
+    gap: 4rem;
+}
+
+.videoPlayerContainer {
+    margin-left: 8rem;
+    margin-right: 4rem;
+    display: inline-block;
+}
+
+.videoPlayerWrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+.videoImg {
+    width: 100%;
+    max-width: 136rem;
+}
+
+.videoOverlay {
+    position: absolute;
+    width: 100%;
+    bottom: 10.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.3rem;
+    font-family: Mulish,sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: #FFFFFF;
+}
+
+.smallOverlay {
+    display: none;
+
+}
+
+.progressBar {
+    position: absolute;
+    width: 100%;
+    bottom: 7.8rem;
+    padding: 0 3.3rem;
+}
+
+.controlPanel {
+    position: absolute;
+    width: 100%;
+    bottom: 3.3rem;
+    padding: 0 3.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controlSettings {
+    display: flex;
+    gap: 4rem;
+}
+
+.nameVideo {
+    font-family: Mulish,sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: #192646;
+    margin-bottom: 1.5rem;
+}
+
+.viewsReactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.views {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: #C2C2C2;
+}
+
+.reactionsSettings {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.reactions {
+    display: flex;
+    gap: 1rem;
+}
+
+.rectangle {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.rectangle p {
+    font-family: Mulish,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #192646;
+}
+
+.rectangle img {
+    margin-right: 0.8rem;
+}
+
+.line {
+    max-width: 136.3rem;
+    height: 0.1rem;
+    background-color: #D8D8D880;
+    margin-bottom: 3.8rem;
+}
+
+.descriptionBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameAndDescription {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.logoChannel img {
+    width: 8rem;
+}
+
+.nameAndButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.channelName {
+    font-family: Mulish,sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    color: #19202C;
+    margin-bottom: 0.4rem;
+}
+
+.date {
+    font-family: Mulish,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #C2C2C2;
+    margin-bottom: 1.4rem;
+}
+
+.description {
+    font-family: Mulish,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: #000000;
+    max-width: 82rem;
+    margin-bottom: 1.5rem;
+}
+
+.showMore {
+    font-family: Mulish,sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: #C2C2C2;
+}
+
+
+
+.subscribeButton {
+    width: 15.4rem;
+    height: 4rem;
+    background-color: #FF0000;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribeButton p {
+    font-family: Mulish,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color:#FFFFFF;
+}
+
+.aside {
+    width: 100%;
+    max-width: 36.7rem;
+    margin-right: 7rem;
+
+}
+
+.sideVideoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.sideTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next {
+    font-family: Mulish,sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: #19202C;
+}
+
+.autoPlay {
+    display: flex;
+    align-items: center;
+}
+
+.autoPlay p {
+    font-family: Mulish,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.videoBlock {
+
+}
+
+.videoCoverWrapper {
+    position: relative;
+}
+
+.videoBlock img {
+    /*max-width: 36.7rem;*/
+    margin-bottom: 1.3rem;
+}
+
+.timeCodes {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.timeCodeRectangle {
+    width: 4.7rem;
+    height: 2.4rem;
+    border-radius: 1.2rem;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.timeCodeRectangle p {
+    color: white;
+    font-family: Mulish,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.timeCodesNumbers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Mulish,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.videoTitle {
+    font-family: Mulish,sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    color: #19202C;
+    margin-bottom: 1.1rem;
+}
+
+.viewsAndAuthor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewsAndAuthor p {
+    font-family: Mulish,sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    color: #C2C2C2;
+}
+
+@media (max-width: 1440px) {
+    .searchBar {
+        max-width: 50rem;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    .headerLeft {
+        margin-right: 2rem;
+    }
+    .searchBar {
+        max-width: 35rem;
+    }
+}
+
+@media (max-width: 1024px) {
+   .headerRight img {
+       display: none;
+   }
+    .headerRight img:last-child {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .searchBar {
+        display: none;
+    }
+    .headerRight img.searchIcon {
+        display: block;
+    }
+    .videoPlayerContainer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .viewsReactions {
+        flex-wrap: wrap;
+        gap: 1rem
+    }
+    .viewsReactions {
+
+    }
+    .nameVideo {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+    }
+    .overlayWrapper {
+        display: none;
+    }
+
+    .smallOverlay {
+        display: flex;
+        position: absolute;
+        width: 90%;
+        height: 3rem;
+        bottom: 0.8rem;
+        background-color: #3D3D3D;
+        border-radius: 1rem;
+        justify-content: space-around;
+        gap: 1rem;
+        align-items: center;
+        padding: 0 3.3rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .smallProgressBar {
+        max-width: 60%;
+    }
+
+    .smallOverlayIcons {
+        width: 1.5rem
+    }
+    .smallOverlay p {
+        color: #FFFFFF;
+        font-family: Mulish,sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width: 576px)  {
+    .header {
+        margin: 2rem 1.5rem 3rem 1.5rem;
+    }
+
+    .smallOverlay {
+        /*width: 80%;*/
+    }
+
+
+    .hamburger,
+    .headerRight img.userpic,
+    .moreIcon,
+    .date,
+    .showMore,
+    .subscribeButton{
+        display: none;
+    }
+    .subscribersCounter {
+        font-family: Mulish,sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: #C2C2C2;
+    }
+    .dots,
+    .subscribersCounter,
+    .subscribeText{
+        display: block;
+    }
+    .subscribeText {
+        font-family: Mulish,sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: #FF0000;
+        align-self: center
+    }
+
+    .headerRight {
+        gap: 4.5rem;
+    }
+    .videoPlayerWrapper {
+        margin-bottom: 1rem;
+    }
+    .aside {
+        margin-right: 0;
+    }
+    .sideVideoContainer {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem
+    }
+    .nameVideo {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+        margin-left: 1rem;
+    }
+    .channelName, .videoTitle {
+        font-family: Mulish,sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+    .viewsAndAuthor p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+    .viewsReactions {
+
+    }
+    .views {
+        margin-left: 1rem;
+    }
+    .reactions {
+        gap: 0;
+    }
+
+    .line {
+        margin-bottom: 1.5rem;
+    }
+
+    .descriptionBlock {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .description {
+        display: none;
+    }
+
+    .logoChannel {
+        max-width: 5rem;
+    }
+
+    .lowerMenu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .lowerMenuLine {
+        margin-bottom: 1.2rem;
+        margin-top: 0;
+        height: 0.1rem;
+        background-color: #F1F1F1;
+        border: none;
+    }
+    .lowerMenuButtons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .controlButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .controlButton img {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .smallOverlay {
+        /*width: 65%;*/
+    }
+    .nameVideo, .views {
+        margin-left: 1rem;
+    }
+
+    .views {
+        font-family: Mulish,sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    .viewsReactions {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .next {
+        font-family: Mulish,sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+    .autoPlay p {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.3rem;
+        letter-spacing: 0.06rem;
+    }
+}
+
+
+
